@@ -23,32 +23,59 @@
   Remember, this is open-ended. Try to see what you can produce.
 ===================== */
 
+var phillySolarInstallationDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json";
+
 /* =====================
-  Define a resetMap function to remove markers from the map and clear the array of markers
+Define a resetMap function to remove markers from the map and clear the array of markers
 ===================== */
 var resetMap = function() {
   /* =====================
-    Fill out this function definition
+  Fill out this function definition
   ===================== */
+  _.each(myMarkers,function(x){
+    map.removeLayer(x);
+  });
+  myMarkers = [];
 };
 
 /* =====================
-  Define a getAndParseData function to grab our dataset through a jQuery.ajax call ($.ajax). It
-  will be called as soon as the application starts. Be sure to parse your data once you've pulled
-  it down!
+Define a getAndParseData function to grab our dataset through a jQuery.ajax call ($.ajax). It
+will be called as soon as the application starts. Be sure to parse your data once you've pulled
+it down!
 ===================== */
+
+/* =====================
+Fill out this function definition
+===================== */
+
 var getAndParseData = function() {
-  /* =====================
-    Fill out this function definition
-  ===================== */
+  $.ajax(phillySolarInstallationDataUrl).done(function(ajaxResponseValue) {
+    myData = JSON.parse(ajaxResponseValue);
+  });
 };
 
 /* =====================
-  Call our plotData function. It should plot all the markers that meet our criteria (whatever that
-  criteria happens to be — that's entirely up to you)
+Call our plotData function. It should plot all the markers that meet our criteria (whatever that
+criteria happens to be — that's entirely up to you)
 ===================== */
 var plotData = function() {
   /* =====================
-    Fill out this function definition
+  Fill out this function definition
   ===================== */
+
+  var filter = myData.filter(function(x) {
+    return x.KW<numericField2 && x.KW>numericField1;
+  });
+
+  myMarkers = _.map(filter,function(solar) {
+    var popup = "NAME:"+solar.NAME+
+    "<br />DEVELOPER:"+solar.DEVELOPER+
+    "<br />ADDRESS:"+solar.ADDRESS+
+    "<br />Power(KW):"+solar.KW;
+    return L.marker([solar.Y,solar.X]).bindPopup(popup);
+  });
+
+  _.each(myMarkers,function(markers) {
+    markers.addTo(map);
+  });
 };

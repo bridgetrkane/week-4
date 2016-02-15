@@ -3,25 +3,75 @@ Add more styles here!
 ================= */
 
 body {
-    padding: 0;
-    overflow: hidden;
-    font-family: helvetica, arial, sans-serif;
+  padding: 0;
+  overflow: hidden;
+  font-family: helvetica, arial, sans-serif;
 }
 
 .map {
-    position: absolute;
-    right: 0px;
-    left: 340px;
-    height: 100%;
-    top: 0;
+  position: absolute;
+  right: 0px;
+  left: 340px;
+  height: 100%;
+  top: 0;
 }
 
 .sidebar {
-    position: absolute;
-    left: 0px;
-    width: 340px;
-    top: 0;
-    bottom: 0;
-    overflow-y: auto;
-    padding: 20px;
+  position: absolute;
+  left: 0px;
+  width: 340px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.topbox {
+  border-bottom: solid grey;
+  border-bottom-width: thin;
+  padding: 2px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size:22px;
+  font-weight: bold;
+  display:inline-block;
+  margin-bottom:5px;
+}
+
+button {
+  float:right;
+  margin-top: 15px;
+}
+
+.school {
+  background-color: #E8E8E8;
+  padding: 10px 10px;
+  margin: 10px 2px;
+  display: block;
+  font-size:22px;
+}
+
+.schoolName {
+  margin:20px 5px 5px 0px;
+  font-size:18px;
+}
+
+.schoolType {
+  margin-top:5px;
+  font-size:18px;
+  color:#939393;
+}
+
+.schoolAddress {
+  font-size:14px;
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.schoolZip {
+  font-size:15px;
+  margin-top:0px;
+  margin-bottom:10px;
 }

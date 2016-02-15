@@ -47,8 +47,48 @@
       Add HTML!
       ====================== -->
 
+      <div class = "topbox">
+        <h1>Filters</h1>
+        <button>Hide Filters</button>
+
+        <div class = "schools">
+          <p>By Name</p>
+          <textarea rows="1" cols="33"></textarea>
+          <p>By Grade</p>
+          <select>
+            <option value="AllGrades">All Grades</option>
+          </select>
+
+        </div>
+      </div>
+
+      <h1>Schools</h1>
+
+      <div class="school">
+        <p class="schoolName">Henry, Charles W.</p>
+        <p class="schoolType">Elem/Middle</p>
+        <p class="schoolAddress">601 Carpenter La.</p>
+        <p class="schoolZip">19119 - 3405</p>
+      </div>
+
+      <div class="school">
+        <p class="schoolName">Universal Creighton Charter School</p>
+        <p class="schoolType">Elem/Middle</p>
+        <p class="schoolAddress">5401 Tabor Ave</p>
+        <p class="schoolZip">19120 - 3614</p>
+      </div>
+
+      <div class="school">
+        <p class="schoolName">Marshall, John</p>
+        <p class="schoolType">Elementary School</p>
+        <p class="schoolAddress">4500 Griscom St.</p>
+        <p class="schoolZip">19124 - 3653</p>
+      </div>
+
     </div>
+
     <!-- Map -->
+
     <div id="map" class="map"></div>
 
     <!-- Javascript Imports -->
@@ -57,17 +97,17 @@
 
     <!-- Javascript Code -->
     <script>
-      var map = L.map('map', {
-        center: [39.9522, -75.1639],
-        zoom: 14
-      });
-      var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
-	      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      	subdomains: 'abcd',
-      	minZoom: 0,
-      	maxZoom: 20,
-      	ext: 'png'
-      }).addTo(map);
+    var map = L.map('map', {
+      center: [39.9522, -75.1639],
+      zoom: 14
+    });
+    var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 20,
+      ext: 'png'
+    }).addTo(map);
     </script>
   </body>
-</html>
+  </html>
