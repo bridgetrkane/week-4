@@ -1,9 +1,105 @@
 body {
-    padding: 0;
-    overflow: hidden;
-    font-family: helvetica, arial, sans-serif;
+  padding: 0;
+  overflow: scroll;
+  font-family: helvetica, arial, sans-serif;
+
 }
 
 /* =================
 Add more styles here!
 ================= */
+
+.top-box {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.wrap {
+  float: left;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 225px;
+  background-color: #F5F5F5
+}
+
+.wrap-bottom {
+  float: left;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  background-color: #E8E8E8;
+}
+
+.top-box h1 {
+  margin-top:0px;
+  margin-bottom:50px;
+  font-size:90px;
+  line-height: 50px;
+  font-weight: 900;
+  text-transform: UPPERCASE;
+  letter-spacing: 10px;
+  padding-top: 100px;
+}
+
+.top-box h2 {
+  margin-top:0px;
+  margin-bottom:50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  letter-spacing: 1px;
+  font-size: 34px;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+.image {
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.button.large {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 0;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #0FCDA1;
+  width: 400px;
+}
+
+.button.inverse:hover, .button:hover {
+  background:#4F5354;
+}
+
+.button.inverse {
+  background: grey;
+}
+
+.button.large {
+  font-size:19px;
+  padding:12px 16px;
+}
+
+.button.center {
+  text-align:center;
+  display:inherit;
+  margin:0 auto;
+}
+
+.button.large a {
+  font-size:24px;
+  line-height:24px;
+}

@@ -1,100 +1,146 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- CSS Imports -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/leaflet.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <!-- =====================
-    Edit css/main.css
-    ====================== -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
+<head>
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <!-- =====================
+  Edit css/main.css
+  ====================== -->
+  <link rel="stylesheet" href="css/main.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
 
-    <!-- =====================
+  <!-- =====================
 
-    # Week 4 - Assignment 2
+  # Week 4 - Assignment 2
 
-    ## Introduction
+  ## Introduction
 
-    Grids are at the foundation of many web designs (http://designmodo.com/grid-design-theory/).
-    For this assignment, you will try to recreate a design from a real website.
+  Grids are at the foundation of many web designs (http://designmodo.com/grid-design-theory/).
+  For this assignment, you will try to recreate a design from a real website.
 
-    ## Using a Grid
+  ## Using a Grid
 
-    The CSS file css/grid.css contains several classes that set up the grid we
-    will use for this exercise. Take a look at it to see what classes it offers.
+  The CSS file css/grid.css contains several classes that set up the grid we
+  will use for this exercise. Take a look at it to see what classes it offers.
 
-    1. column: a column controls the width of a block of content in the grid
-    2. row: a row is used to create a horizontal group of columns
-    3. container: a container positions a row in the center of the page and gives
-       it the proper width
+  1. column: a column controls the width of a block of content in the grid
+  2. row: a row is used to create a horizontal group of columns
+  3. container: a container positions a row in the center of the page and gives
+  it the proper width
 
-    Example:
+  Example:
 
-    <div class="container">
-      <div class="row">
-        <div class="column-one-third">
-          Fruits that are good
-        </div>
-        <div class="column-two-thirds">
-          <ul>
-            <li>Pears</li>
-            <li>Plums</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="container">
+  <div class="row">
+  <div class="column-one-third">
+  Fruits that are good
+</div>
+<div class="column-two-thirds">
+<ul>
+<li>Pears</li>
+<li>Plums</li>
+</ul>
+</div>
+</div>
+</div>
 
-    ## Task
+## Task
 
-    Recreate one of the following websites using your own code. For each website,
-    see the screen capture that shows which parts to recreate. Your goal for
-    recreating these sites is to make them look as similar as possible in terms
-    of style and layout. However, you should use your own text and images. For
-    royalty free images, check out http://thestocks.im/ or use your own photos.
+Recreate one of the following websites using your own code. For each website,
+see the screen capture that shows which parts to recreate. Your goal for
+recreating these sites is to make them look as similar as possible in terms
+of style and layout. However, you should use your own text and images. For
+royalty free images, check out http://thestocks.im/ or use your own photos.
 
-    URL: http://raw.densitydesign.org/
-    Which part to recreate: screen-raw.jpg
+URL: http://raw.densitydesign.org/
+Which part to recreate: screen-raw.jpg
 
-    URL: https://www.cardnest.com/
-    Which part to recreate: screen-cardnest.jpg
+URL: https://www.cardnest.com/
+Which part to recreate: screen-cardnest.jpg
 
-    URL: http://www.hbs.edu/
-    WHich part to recreate: screen-hbs.jpg
+URL: http://www.hbs.edu/
+WHich part to recreate: screen-hbs.jpg
 
-    ## Do your best!
+## Do your best!
 
-    Don't worry about getting it perfect. Just try to get it as close as you can.
+Don't worry about getting it perfect. Just try to get it as close as you can.
 
-    ====================== -->
+====================== -->
 
-    <div class="container">
-      <div class="row">
-        <div class="column-one-half">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
+<div class="wrap">
+  <div id="container-1" class="container.first">
+    <div class="row">
+      <div class="column-full">
+        <div class="top-box">
+          <h1 style="color: #4F5354">Travel Right</h1>
+          <h2 style="color: #4F5354">Find a city to suit your personality!</h2>
+          <p style="font-size: 14px">
+            <a class="button large center">Take our personality quiz</a>
           </p>
-        </div>
-        <div class="column-one-half">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-one-third">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-        <div class="column-two-thirds">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
+          <p style="font-size: 14px">
+            <a class="button large center inverse">Browse through our cities & itineraries</a>
           </p>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+
+
+<div class="wrap-bottom">
+  <div id="container-2" class="container">
+    <div class="row">
+      <h1 style="text-align: center; font-size: 30px; color: #4F5354">FEATURED CITIES</h1>
+
+      <div class="column-one-quarter">
+        <img src="http://40.media.tumblr.com/08b5968c7f988c83a60670348faa04e3/tumblr_o2c9jxxA271ta0hnbo1_1280.jpg" class=image>
+        <br>
+        <h4 style="text-align:center; color: #4F5354">El Calafate, Argentina</h4>
+        <p style="color: #4F5354; font-size: 26">
+          El Calafate is a town near the edge of the Southern Patagonian Ice Field in the Argentine province of Santa Cruz.
+          It’s mainly known as the gateway to Los Glaciares National Park, home to the massive Perito Moreno Glacier, whose ever-shifting icy landscape is popular for hiking and sightseeing.
+          A modern interpretive center called the Glaciarium serves as a primer on the region’s numerous glaciers.
+        </p>
+      </div>
+
+      <div class="column-one-quarter">
+        <img src="http://36.media.tumblr.com/6336c7700eaf8c19b73cceef1228509c/tumblr_nx5by88nAf1ta0hnbo1_1280.jpg" class=image>
+        <br>
+        <h4 style="text-align:center; color: #4F5354">San Francisco, USA</h4>
+        <p style="color: #4F5354; font-size: 26">
+          San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay.
+          It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses.
+          The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.
+        </p>
+      </div>
+
+      <div class="column-one-quarter">
+        <img src="http://41.media.tumblr.com/4e49ca4de08702f2c19230793eb222ec/tumblr_nxum4fmb1Q1ta0hnbo1_1280.jpg" class=image>
+        <br>
+        <h4 style="text-align:center; color: #4F5354">Tainan, Taiwan</h4>
+        <p style="color: #4F5354; font-size: 26">
+          Tainan, a city on Taiwan's southwest coast, was the island’s capital from 1683-1887 under the Qing dynasty.
+          Today it’s known for its centuries-old fortresses and temples. Perhaps its most famous site is Chihkan Tower, an 18th-century Chinese complex with gardens,
+          intricately carved towers and a temple erected on the foundations of Fort Provintia, a Dutch outpost dating to the mid-1600s.
+        </p>
+      </div>
+
+      <div class="column-one-quarter">
+        <img src="http://40.media.tumblr.com/97dee9f17fe868f9591736424f728e41/tumblr_nftzwgewD61ta0hnbo1_1280.jpg" class=image>
+      </div>
+      <h4 style="text-align:center; color: #4F5354">Badaling, China</h4>
+      <p style="color: #4F5354; font-size: 26">
+        Badaling is the site of the most visited section of the Great Wall of China, approximately 50 miles (80 km) northwest of urban Beijing city in Yanqing County,
+        which is within the Beijing municipality. The portion of the wall running through the site was built in 1504 during the Ming Dynasty, along with a military outpost reflecting the location's strategic importance.
+        The highest point of Badaling is Beibalou, approximately 1,015 metres (3,330 ft) above sea level.
+      </p>
+    </div>
+  </div>
+
+</div>
+</body>
 </html>
